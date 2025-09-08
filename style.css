@@ -98,3 +98,27 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+
+main {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px 12px 13px;
+}
+
+.card {
+  background-color: var(--clr-bg-card);
+  max-width: 37.5rem;
+  display: grid;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 37.5rem) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
