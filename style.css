@@ -117,8 +117,17 @@ main {
   box-shadow: var(--shadow);
 }
 
+.card__content {
+  padding: var(--space-400);
+  display: grid;
+  gap: var(--space-300);
+}
+
 @media (min-width: 37.5rem) {
   .card {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card__content {
+    gap: var(--space-400);
   }
 }
