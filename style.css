@@ -117,10 +117,35 @@ main {
   box-shadow: var(--shadow);
 }
 
+.card__image img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .card__content {
   padding: var(--space-400);
   display: grid;
   gap: var(--space-300);
+}
+
+.card__info {
+  display: grid;
+  gap: var(--space-300);
+}
+
+.card__category {
+  font-size: var(--fs-xxs);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-xxs);
+  text-transform: uppercase;
+}
+
+.card__title {
+  color: var(--clr-text-secondary);
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-none);
 }
 
 @media (min-width: 37.5rem) {
