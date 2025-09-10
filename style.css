@@ -148,6 +148,25 @@ main {
   line-height: var(--lh-none);
 }
 
+.price {
+  display: flex;
+  align-items: center;
+  gap: var(--space-200);
+}
+
+.price__current {
+  color: var(--clr-text-accent);
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-none);
+}
+
+.price__original {
+  font-size: var(--fs-xs);
+  line-height: var(--lh-snug);
+}
+
 @media (min-width: 37.5rem) {
   .card {
     grid-template-columns: repeat(2, 1fr);
