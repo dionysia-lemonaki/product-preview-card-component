@@ -55,8 +55,8 @@
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-VariableFont.woff2") format("woff2");
+  font-family: "Fraunces";
+  src: url("/fonts/Fraunces-VariableFont.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
@@ -165,6 +165,32 @@ main {
 .price__original {
   font-size: var(--fs-xs);
   line-height: var(--lh-snug);
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--clr-btn-bg);
+  color: var(--clr-btn-text);
+  border-color: transparent;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-200) var(--space-400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-100);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+
+  &:hover {
+    background-color: var(--clr-btn-bg-hover);
+  }
+
+  &:focus-visible {
+    background-color: var(--clr-btn-bg-hover);
+    outline: 2px dotted var(--clr-btn-bg-hover);
+    outline-offset: 2px;
+  }
 }
 
 @media (min-width: 37.5rem) {
