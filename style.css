@@ -128,3 +128,12 @@ picture {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.card__content {
+  padding: var(--space-400);
+  gap: var(--space-300);
+
+  @media (width >= 37.5rem) {
+    gap: var(--space-400);
+  }
+}
