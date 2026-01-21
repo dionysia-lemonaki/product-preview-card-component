@@ -44,6 +44,12 @@
 
 body {
   background-color: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 12px 12px 13px;
 }
 
 img,
@@ -110,3 +116,15 @@ picture {
 }
 
 /* --- end of utility classes */
+
+.card {
+  background-color: var(--white);
+  max-width: 37.5rem;
+  border-radius: var(--space-100);
+  overflow: hidden;
+  display: grid;
+
+  @media (width >= 37.5rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
