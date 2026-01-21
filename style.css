@@ -129,6 +129,10 @@ picture {
   }
 }
 
+.card__image {
+  height: 100%;
+}
+
 .card__content {
   padding: var(--space-400);
   gap: var(--space-300);
@@ -136,4 +140,21 @@ picture {
   @media (width >= 37.5rem) {
     gap: var(--space-400);
   }
+}
+
+.card__text {
+  gap: var(--space-300);
+}
+
+.card__category {
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.card__title {
+  color: var(--black);
+}
+
+.card__description {
+  color: var(--grey);
 }
