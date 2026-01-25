@@ -158,3 +158,16 @@ picture {
 .card__description {
   color: var(--grey);
 }
+
+.price {
+  gap: var(--space-200);
+  align-items: center;
+}
+
+.price__current {
+  color: var(--green-500);
+}
+
+.price__original {
+  color: var(--grey);
+}
