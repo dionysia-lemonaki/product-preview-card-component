@@ -171,3 +171,28 @@ picture {
 .price__original {
   color: var(--grey);
 }
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-100);
+  padding: var(--space-200) var(--space-400);
+  border: none;
+  border-radius: var(--space-100);
+  color: var(--white);
+  background-color: var(--green-500);
+
+  &:hover {
+    background-color: var(--green-700);
+  }
+
+  &:focus-visible {
+    outline: 2px dotted var(--green-700);
+    outline-offset: 2px;
+  }
+}
+
+.btn__icon {
+  width: 0.9375rem;
+  height: 1rem;
+}
