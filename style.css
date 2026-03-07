@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/Fraunces-VariableFont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/Montserrat-VariableFont.woff2") format("woff2");
+}
+
+:root {
+  --black: hsl(212 21% 14%);
+  --grey: hsl(228 12% 48%);
+  --cream: hsl(30 38% 92%);
+  --white: hsl(0 0% 100%);
+  --green-500: hsl(158 36% 37%);
+  --green-700: hsl(158 42% 18%);
+
+  --font-serif: "Fraunces", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.875rem;
+  --fs-2xl: 2rem;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --lh-none: 1;
+  --lh-tight: 1.1;
+  --lh-snug: 1.2;
+  --lh-relaxed: 1.6;
+
+  --space-50: 4px;
+  --space-100: 8px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-400: 32px;
+  --space-500: 40px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--grey);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-relaxed);
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
