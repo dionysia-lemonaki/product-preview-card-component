@@ -108,3 +108,24 @@ body {
     gap: var(--space-400);
   }
 }
+
+.card__intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.card__category {
+  font-size: var(--fs-xs);
+  line-height: var(--lh-snug);
+  letter-spacing: 0.417em;
+  text-transform: uppercase;
+}
+
+.card__title {
+  color: var(--black);
+  font-family: var(--font-serif);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-none);
+}
