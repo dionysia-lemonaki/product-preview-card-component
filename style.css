@@ -134,3 +134,22 @@ body {
   font-size: var(--fs-2xl);
   line-height: var(--lh-none);
 }
+
+.card__prices {
+  display: flex;
+  align-items: center;
+  gap: var(--space-200);
+}
+
+.card__price--current {
+  color: var(--green-500);
+  font-family: var(--font-serif);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-none);
+}
+
+.card__price--original {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+}
